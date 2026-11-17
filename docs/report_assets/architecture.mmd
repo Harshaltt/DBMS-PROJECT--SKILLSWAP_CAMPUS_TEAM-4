@@ -1,0 +1,11 @@
+flowchart LR
+  B["Browser<br/>React 19 pages"] -- "fetch JSON + httpOnly cookie" --> MW["middleware.js<br/>page guard"]
+  B --> API["Next.js 15 Route Handlers<br/>app/api/**"]
+  API --> AUTH["lib/auth.js + lib/api.js<br/>JWT, role check"]
+  API --> EMB["lib/embeddings.mjs<br/>all-MiniLM-L6-v2 (ONNX, offline)"]
+  API -- "parameterised SQL (node-postgres)" --> R
+  EMB -- "384-d vectors" --> V
+  subgraph PG["PostgreSQL 16"]
+    R["Relational schema<br/>10 tables, constraints, triggers,<br/>procedure, views"]
+    V["pgvector<br/>skill_embeddings, resource_embeddings<br/>HNSW cosine index"]
+  end

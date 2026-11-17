@@ -1,0 +1,100 @@
+skillswap-campus/
+├── app/
+│   ├── (app)/
+│   │   ├── admin/
+│   │   │   ├── catalog/page.js
+│   │   │   ├── db-lab/page.js
+│   │   │   ├── users/page.js
+│   │   │   └── page.js
+│   │   ├── credits/page.js
+│   │   ├── dashboard/page.js
+│   │   ├── my-skills/page.js
+│   │   ├── resources/page.js
+│   │   ├── sessions/page.js
+│   │   ├── skills/page.js
+│   │   └── layout.js
+│   ├── api/
+│   │   ├── admin/
+│   │   │   ├── analytics/route.js
+│   │   │   ├── catalog/route.js
+│   │   │   ├── db-lab/route.js
+│   │   │   └── users/route.js
+│   │   ├── auth/
+│   │   │   ├── login/route.js
+│   │   │   ├── logout/route.js
+│   │   │   ├── me/route.js
+│   │   │   └── register/route.js
+│   │   ├── borrow/
+│   │   │   ├── [id]/route.js
+│   │   │   └── route.js
+│   │   ├── catalog/route.js
+│   │   ├── credits/route.js
+│   │   ├── dashboard/route.js
+│   │   ├── my-skills/
+│   │   │   ├── [id]/route.js
+│   │   │   └── route.js
+│   │   ├── notifications/route.js
+│   │   ├── resources/
+│   │   │   ├── [id]/route.js
+│   │   │   └── route.js
+│   │   ├── reviews/route.js
+│   │   ├── sessions/
+│   │   │   ├── [id]/route.js
+│   │   │   └── route.js
+│   │   └── skills/
+│   │       └── search/route.js
+│   ├── login/page.js
+│   ├── register/page.js
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+├── components/
+│   ├── AppShell.js
+│   ├── BookModal.js
+│   ├── PublicNav.js
+│   └── ui.js
+├── db/
+│   ├── week4/   # Week 4 tests
+│   ├── 01_schema.sql
+│   ├── 02_migrations.sql
+│   ├── 03_features.sql
+│   ├── 04_vector.sql
+│   └── 05_important_queries.sql
+├── docs/
+│   ├── report_assets/   # report images, scripts
+│   ├── screenshots/   # 24 app screenshots
+│   ├── er_diagram_chen.pdf
+│   ├── er_diagram_chen.png
+│   ├── relational_schema.png
+│   ├── SkillSwap_Campus_Final_Report.docx
+│   ├── SkillSwap_Campus_Final_Report.pdf
+│   └── Week4_Lab_Submission_v2.docx
+├── lib/
+│   ├── api.js
+│   ├── auth.js
+│   ├── constants.js
+│   ├── db.mjs
+│   ├── embeddings.mjs
+│   ├── errors.js
+│   ├── integrityTests.mjs
+│   └── showcase.mjs
+├── models/   # MiniLM ONNX model
+├── scripts/
+│   ├── embed.mjs
+│   ├── load-env.mjs
+│   ├── search-demo.mjs
+│   ├── seed-data.mjs
+│   ├── seed.mjs
+│   ├── setup-db.mjs
+│   └── test-db.mjs
+├── tests/api-smoke.mjs
+├── .env.example
+├── .gitignore
+├── DEMO_GUIDE.md
+├── docker-compose.yml
+├── jsconfig.json
+├── middleware.js
+├── next.config.mjs
+├── package.json
+├── README.md
+└── START_HERE.md
