@@ -1,0 +1,28 @@
+{
+  "name": "skillswap-campus",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SkillSwap Campus - peer-to-peer skill exchange & resource sharing platform (PostgreSQL + pgvector + Next.js)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:setup": "node scripts/setup-db.mjs",
+    "db:embed": "node scripts/embed.mjs",
+    "db:test": "node scripts/test-db.mjs",
+    "test:api": "node tests/api-smoke.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "3.8.1",
+    "bcryptjs": "3.0.3",
+    "dotenv": "16.4.7",
+    "jose": "6.1.0",
+    "next": "15.5.26",
+    "pg": "8.16.3",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}
